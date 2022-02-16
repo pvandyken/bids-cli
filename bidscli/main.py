@@ -1,5 +1,6 @@
 from bids import BIDSLayout, BIDSLayoutIndexer
 from pathlib import Path
+import re
 import typer
 
 app = typer.Typer()
