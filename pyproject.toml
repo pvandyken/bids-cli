@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "bids-cli"
+version = "0.1.0"
+description = ""
+authors = ["Peter Van Dyken <pvandyk2@uwo.ca>"]
+license = "MIT"
+packages = [
+    { include = "bidscli" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pybids = "^0.14.0"
+typer = "^0.4.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+bids = "bidscli.main:app"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
